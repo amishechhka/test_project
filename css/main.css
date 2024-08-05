@@ -1,0 +1,520 @@
+@font-face {
+    font-family: 'Gill Sans MT';
+    src: url('../fonts/GillSansMT.eot');
+    src: url('../fonts/GillSansMT.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GillSansMT.woff') format('woff'),
+         url('../fonts/GillSansMT.ttf') format('truetype'),
+         url('../fonts/GillSansMT.svg') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+ @font-face{
+    font-family: 'Gill Sans MT-Bold';
+    src: url('../fonts/GillSansMT-Bold.eot');
+    src: url('../fonts/GillSansMT-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GillSansMT-Bold.woff') format('woff'),
+        url('../fonts/GillSansMT-Bold.ttf') format('truetype'),
+        url('../fonts/GillSansMT-Bold.svg') format('svg');
+    font-style: bold;
+    font-weight: bold;
+}
+body {
+    font-size: 20px;
+    color: #8c8f94;
+    font-family: "Gill Sans MT";
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #26272d;
+    line-height: 1.2em;
+}
+
+p {
+   color:  #8c8f94;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #26272d;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    border:none;
+    background: none;
+}
+
+button:focus{
+    border:none;
+}
+
+.btn {
+    border-radius: 21px;
+    background-color: #267df4;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background-color: rgb(9, 98, 223);
+    color: #fff;
+    box-shadow: 0 3px 5px rgb(37 0 249 / 25%);
+    transition: all 0.5s ease;
+}
+
+.btn:active {
+    background:#1a6bdd; 
+    box-shadow: none;
+}
+
+.phone:hover{
+    transform: scale(1.1) ;
+    -webkit-transform: scale(1.1) ;
+    -moz-transform: scale(1.1) ;
+    transition: all 0.5s ease;
+}
+.app-screen:hover {
+    transform: scale(1.05) ;
+    -webkit-transform: scale(1.05) ;
+    -moz-transform: scale(1.05) ;
+    transition: all 0.5s ease;
+}
+.screen:hover{
+    transform: scale(1.1) ;
+    -webkit-transform: scale(1.1) ;
+    -moz-transform: scale(1.1) ;
+    transition: all 0.5s ease;
+}
+
+/* первый экран */
+.header {
+    background:  url('../img/header.png') no-repeat center top;
+    padding-top: 30px;
+} 
+
+.gam {
+    width: 20px;
+    height: 12px;
+}
+
+.menu__item{
+    margin-right: 40px;
+}
+
+.menu__link:hover{
+ color:#fdf6f6 ;
+ transition: all 0.2s ease;
+}
+
+.menu_gam{
+    margin-right: 30px;
+}
+
+
+.logo{
+    background: url('../img/fullviewapp.svg') no-repeat;
+    max-width: 133px;
+    height: 15px;
+    display: block;
+    margin:0 auto;
+}
+
+.menu__info{
+    margin-left: 33px;
+} 
+
+.cont{
+    height: 42px;
+    margin-left: 30px;
+}
+
+.menu__lock{
+    color: #8b8e94;
+    transition: all 0.2s ease;
+
+}
+
+.menu__lock:hover{
+color: rgb(255, 248, 248);
+transition: all 0.2s ease;
+}
+
+.download-btn {
+    padding: 9px 25px 9px 18px;
+    width: 132px;
+    color: #fff;
+    background: #267df4;
+ }
+ 
+ .download-btn::before {
+    content: '';
+    display: block;
+    background: url('../img/Apple_Icon.svg');
+    width: 16px;
+    height: 20px;
+ }
+
+ .offer {
+     padding-top: 110px;
+     text-align: center;
+     max-width: 780px;
+     padding-bottom: 30px;
+}
+.offer__title {
+    font-size: 62px;
+}
+.offer__text {
+    font-size: 20px;
+    padding: 30px 5px 50px
+}
+
+.offer__btn {
+    border-radius: 25px;
+    border: 1px solid #26272d;
+    background: none;
+    padding: 10px 30px;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.offer__btn::before {
+    content:'';
+    display: block;
+    background: url('../img/Play_Icon.svg') no-repeat;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+}
+
+.offer__btn:hover {
+    transition: all 0.5s ease;
+    background-color:rgb(145, 150, 192);
+    color: #fff;
+    box-shadow: 0 3px 5px rgba(125, 116, 180, 0.50);
+}
+.phone {
+    transition: all 0.5s ease;
+    width: auto;
+    max-width: 480px;
+    height: 455px;
+    background: url('../img/iPhone_6.png');
+}
+
+/* time */
+.time {
+    padding-top: 122px;
+    max-width: 505px;
+}
+.time__real {
+    width: 42px;
+}
+.time__all {
+    padding-top: 45px;
+    padding-bottom: 49px;
+    font-size: 26px;
+}
+.time__text {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.time2{
+    padding-top: 124px;
+    max-width: 494px;
+}
+
+.time__riil{
+    width: 41px;
+}
+.time__all_two{
+   padding-top:  46px;
+}
+
+/* Your day is protected */ 
+
+.info {
+    padding-top: 116px;
+    /* overflow: hidden; */
+}
+
+.app-screen{
+    max-width: 740px;
+    width: auto;
+    height: 645px;
+    background: url('../img/iPhone_6_2.jpg');
+    margin-left: -82px;
+    transition: all 0.5s ease;
+}
+
+.info-info {
+    margin-right: -25px;
+    padding-left: 65px;
+}
+
+.info-title{
+    font-size: 42px;
+    max-width: 232px;
+    padding-bottom: 75px;
+}
+
+.info-text{
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.info-btn{
+    border-radius: 21px;
+    padding: 10px 19px 10px 26px;
+}
+
+.info-born-btn {
+    padding-top: 75px;
+}
+
+.info-btn {
+    margin-right: 20px;
+}
+
+.desk-btn {
+    border: 1px solid #26272d;
+    background: none;
+    padding: 10px 30px;
+    border-radius: 21px;
+    transition: all 0.5s ease;
+}
+
+.desk-btn:hover{
+    background: rgb(34, 112, 221);
+    color: #fff;
+    transition: all 0.5s ease;
+    border: 1px solid #fff;
+}
+
+.info-btn::after {
+    content:'';
+    display: block;
+    background: url('../img/Arrow_Icon.svg') no-repeat;
+    width: 13px;
+    height: 12px;
+    margin-left: 52px;
+}
+
+/* part */
+
+.partners{
+    padding-top: 40px;
+}
+.part {
+    padding-right: 71px;
+}
+
+.part__title {
+    font-size: 42px;
+    max-width: 290px
+}
+.part__text {
+    padding-top: 65px;
+}
+.part__specs {
+    padding-top: 65px;
+    padding-bottom: 31px;
+}
+
+.part__dropbox {
+    max-width: 125px;
+    height: 34px;
+    margin-right: 31px;
+}
+
+.part__evernote {
+    max-width: 138px;
+    height: 35px;
+}
+
+.screen {
+    max-width: 627px;
+    height: 401px;
+    background: url('../img/World_Map.png');
+    margin-top: 25px;
+    margin-left: 71px;
+    margin-right: -30px;
+    transition: all 0.5s ease;
+}
+
+/* footer */
+
+.footer {
+    padding-top: 247px;
+    padding-bottom: 268px;
+    text-align:left;
+    font-size: 16px;
+}
+
+.logo_footer{
+    margin: 0;
+}
+
+.footer-text{
+    padding-top: 31px;
+    padding-bottom: 29px;
+    font-size: 14px;
+    max-width: 232px;
+}
+
+.title-footer{
+    padding-bottom: 27px;
+}
+
+.more{
+    padding-bottom: 10px;
+}
+.foooter{
+padding-bottom: 50px;
+}
+
+.footer-btn{
+    color: #8c8f94;
+    transition: all 1s ease;
+}
+
+.footer-btn:hover{
+    color: #26272d;
+    transition: all 0.5s ease;
+    font-size: 17px;
+}
+
+
+@media ( max-width: 1199px) {
+    .info{
+        padding-top: 70px;
+    }
+    .info-info{
+        padding-top: 50px;
+        padding-bottom: 100px;
+        margin: 0 auto;
+    }
+    .app-screen{
+        margin: 0;
+    }
+    .info-title{
+        max-width: 370px;
+        
+        margin: 0 auto;
+    }
+    .info-born-btn{
+        justify-content: space-around;
+    }
+    .screen {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav {
+        display: none;
+    }
+    .offer{
+        padding-top: 90px;
+    }
+    .app-screen {
+        margin-right: -30px;
+    }
+    .info-title {
+        padding-bottom: 50px;
+    }
+    .info-btn{
+        width: 50%;
+    }
+    .desk-btn{
+        width: 50%;
+    }
+    .part{
+        padding: 0 0 70px 0;
+    }
+    .part__title{
+        max-width: 470px;
+        margin: 0 auto;
+    }
+    .part__specs{
+        padding: 40px 0 30px;
+    }
+    .screen{
+        margin: 0;
+    }
+    .footer{
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
+@media (max-width: 575px) {
+    .offer__title{
+        font-size: 50px;
+        line-height: 1.1em;
+    }
+    .phone{
+        max-width: 420px;
+        height: 440px;
+    }
+    .offer__btn {
+        width: 100%;
+        padding: 10px;
+    }
+    .app-screen{
+        display: none;
+    }
+    .screen{
+        display: none;
+    }
+    .footer{
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 480px){
+    .phone{
+        height: 400px;
+    }
+    .time{
+        padding-top: 70px;
+    }
+    .time2{
+        padding-top: 70px;
+    }
+    .info-info{
+        padding-top: 70px;
+        margin-right: 30px;
+    }
+    .info-title{
+        font-size: 38px;
+    }
+    .offer__title{
+        font-size: 44px;
+    }
+    .offer__text{
+        font-size: 18px;
+    }
+    .info{
+        padding-top: 50px;
+    }
+    .part__title{
+        font-size: 38px;
+    }
+
+}
